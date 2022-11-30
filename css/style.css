@@ -1,0 +1,130 @@
+.healthcare__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 56px;
+  color: #000000;
+}
+
+.healthcare__description {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 32px;
+  color: #7D7987;
+}
+
+.healthcare__button {
+  display: block;
+  width: 200px;
+  height: 60px;
+  background: #458FF6;
+  border-radius: 55px;
+}
+
+.healthcare__button {
+  text-decoration: none;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 60px;
+  color: #458FF6;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+.container {
+  max-width: 1218px;
+  margin: auto;
+}
+
+header {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  right: 0;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.header-wrapper nav ul {
+  list-style: none;
+  display: flex;
+}
+.header-wrapper nav ul li a {
+  text-decoration: none;
+  margin-left: 40px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1F1534;
+  opacity: 0.5;
+}
+.header-wrapper nav ul li .active {
+  font-weight: 700;
+  line-height: 23px;
+  opacity: 100%;
+}
+
+.logo-wrapper {
+  display: flex;
+  position: relative;
+}
+.logo-wrapper .logo {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 33px;
+  color: #FFFFFF;
+  margin-left: 13px;
+}
+.logo-wrapper .round {
+  position: absolute;
+  top: -5px;
+  left: 0px;
+  z-index: -1;
+}
+.logo-wrapper .title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #233348;
+  margin-left: 23px;
+}
+
+.healthcare .container {
+  padding-top: 177px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.healthcare .text {
+  width: 445px;
+}
+.healthcare__img {
+  display: block;
+  align-items: center;
+  width: 693px;
+  height: 598px;
+}
+.healthcare__title {
+  font-size: 48px;
+  margin-top: 106px;
+}
+.healthcare__description {
+  margin: 35px 0;
+}
+.healthcare__button {
+  color: #FFFFFF;
+}/*# sourceMappingURL=style.css.map */

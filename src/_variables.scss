@@ -1,0 +1,36 @@
+$color-title:#000000;
+$color-description: #7D7987;
+$color-button:#458FF6;
+%text-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 56px;
+    color: $color-title;
+}
+
+%text-description {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 32px;
+    color: $color-description;
+}
+
+%button {
+    display: block;
+    width: 200px;
+    height: 60px;
+    background: #458FF6;
+    border-radius: 55px;
+}
+
+%button-text {
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 60px;
+    color: $color-button;
+}
