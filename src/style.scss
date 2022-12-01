@@ -325,6 +325,13 @@
                 }
                 
                 .article {
+                    .button-all {
+                        @extend %button;
+                        height: 60px;
+                        margin: auto;
+                        @extend %button-text;
+                        line-height: 60px;
+                    }
                     &__title {
                         @extend %text-title;
                         text-align: center;
@@ -371,13 +378,6 @@
                         }
                         &:nth-child(2) {
                             margin: 0 34px;
-                        }
-                        .button-all {
-                            @extend %button;
-                            height: 60px;
-                            margin: auto;
-                            @extend %button-text;
-                            line-height: 60px;
                         }
                     }
                 }

@@ -15,7 +15,7 @@
   color: #7D7987;
 }
 
-.article__card .button-all, .apps .button, .provideres .button, .services .button, .healthcare__button {
+.article .button-all, .apps .button, .provideres .button, .services .button, .healthcare__button {
   display: block;
   width: 200px;
   height: 56px;
@@ -24,7 +24,7 @@
   border: 2px solid #458FF6;
 }
 
-.article__card .button-all, .apps .button, .provideres .button, .services .button, .healthcare__button {
+.article .button-all, .apps .button, .provideres .button, .services .button, .healthcare__button {
   text-decoration: none;
   text-align: center;
   font-style: normal;
@@ -329,6 +329,11 @@ header {
   margin-top: 278px;
 }
 
+.article .button-all {
+  height: 60px;
+  margin: auto;
+  line-height: 60px;
+}
 .article__title {
   text-align: center;
 }
@@ -373,9 +378,4 @@ header {
 }
 .article__card:nth-child(2) {
   margin: 0 34px;
-}
-.article__card .button-all {
-  height: 60px;
-  margin: auto;
-  line-height: 60px;
 }/*# sourceMappingURL=style.css.map */
