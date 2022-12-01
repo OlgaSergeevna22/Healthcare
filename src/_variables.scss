@@ -20,9 +20,10 @@ $color-button:#458FF6;
 %button {
     display: block;
     width: 200px;
-    height: 60px;
-    background: #458FF6;
+    height: 56px;
+    background: #FFFFFF;
     border-radius: 55px;
+    border: 2px solid $color-button;
 }
 
 %button-text {
@@ -31,6 +32,6 @@ $color-button:#458FF6;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 60px;
+    line-height: 52px;
     color: $color-button;
 }

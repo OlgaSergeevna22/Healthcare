@@ -1,4 +1,5 @@
-.healthcare__title {
+@charset "UTF-8";
+.background__title, .apps__title, .provideres__title, .services__card-title, .services__title, .healthcare__title {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -6,7 +7,7 @@
   color: #000000;
 }
 
-.healthcare__description {
+.apps__description, .provideres__description, .services__card-text, .services__description, .healthcare__description {
   font-style: normal;
   font-weight: 300;
   font-size: 21px;
@@ -14,21 +15,22 @@
   color: #7D7987;
 }
 
-.healthcare__button {
+.apps .button, .provideres .button, .services .button, .healthcare__button {
   display: block;
   width: 200px;
-  height: 60px;
-  background: #458FF6;
+  height: 56px;
+  background: #FFFFFF;
   border-radius: 55px;
+  border: 2px solid #458FF6;
 }
 
-.healthcare__button {
+.apps .button, .provideres .button, .services .button, .healthcare__button {
   text-decoration: none;
   text-align: center;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 60px;
+  line-height: 52px;
   color: #458FF6;
 }
 
@@ -39,6 +41,7 @@
 }
 
 body {
+  background: #F7F9FC;
   font-family: "Mulish", sans-serif;
 }
 
@@ -126,5 +129,172 @@ header {
   margin: 35px 0;
 }
 .healthcare__button {
+  background: #458FF6;
+  line-height: 56px;
   color: #FFFFFF;
+}
+
+.services .container {
+  margin-top: 192px;
+}
+
+.services {
+  background: url(/images/background.svg);
+  background-repeat: no-repeat;
+}
+.services__title {
+  text-align: center;
+}
+.services__title::after {
+  content: "";
+  display: block;
+  background-image: url(/images/line-title.png);
+  width: 56px;
+  height: 2px;
+  margin: 26px auto 33px;
+  background-repeat: no-repeat;
+}
+.services__description {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0 135px 80px 133px;
+  text-align: center;
+}
+.services__cards-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+  background: url(/images/bgelement.svg) right;
+  background-repeat: no-repeat;
+}
+.services__card:nth-child(2), .services__card:nth-child(5) {
+  margin: 0 34px;
+}
+.services__card {
+  display: block;
+  text-align: left;
+  width: 350px;
+  height: 354px;
+  background-color: #FFFFFF;
+  padding-left: 38px;
+  border-radius: 20px;
+  margin-bottom: 37px;
+}
+.services__card-title {
+  font-size: 24px;
+}
+.services__card-text {
+  font-size: 16px;
+  line-height: 28px;
+}
+.services .button {
+  line-height: 52px;
+  margin: auto;
+}
+
+.provideres .container {
+  padding-top: 221px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.provideres__img {
+  display: block;
+  width: 650;
+  height: 477;
+  margin-right: 87px;
+}
+.provideres__text {
+  margin-top: 57px;
+  width: 486px;
+}
+.provideres__title::after {
+  content: "";
+  display: block;
+  background-image: url(/images/line-title.png);
+  width: 56px;
+  height: 2px;
+  margin: 26px 0 31px;
+  background-repeat: no-repeat;
+}
+.provideres__description {
+  font-size: 18px;
+  line-height: 30px;
+  width: 450px;
+}
+.provideres .button {
+  height: 58px;
+  line-height: 56px;
+  margin-top: 37px;
+}
+
+.apps .container {
+  padding-top: 229px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.apps__img {
+  display: block;
+  width: 665px;
+  height: 434px;
+}
+.apps__text {
+  margin: 36px 45px 0 90px;
+  width: 420px;
+}
+.apps__title {
+  line-height: 48px;
+  width: 254px;
+}
+.apps__title::after {
+  content: "";
+  display: block;
+  background-image: url(/images/line-title.png);
+  width: 56px;
+  height: 2px;
+  margin: 30px 0 31px;
+  background-repeat: no-repeat;
+}
+.apps__description {
+  font-size: 18px;
+  line-height: 30px;
+}
+.apps .button {
+  height: 56px;
+  margin-top: 40px;
+}
+.apps .button::after {
+  content: "⤓";
+  margin-left: 15px;
+}
+
+.feedback .container {
+  margin-top: 251px;
+}
+
+.background {
+  background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+  border-radius: 24px;
+  width: 1120px;
+  margin: auto;
+  padding: 79px 0;
+}
+.background__title {
+  line-height: 48px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.background__title::after {
+  content: "";
+  display: block;
+  background-image: url(/images/line-white.png);
+  width: 56px;
+  height: 2px;
+  margin: 30px auto 31px;
+  background-repeat: no-repeat;
+}
+.background__customer {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

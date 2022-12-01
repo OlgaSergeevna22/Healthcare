@@ -1,103 +1,293 @@
-    @import 'variables.scss';
-    * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-    }
-    
-    body {
-        font-family: 'Mulish', sans-serif;
-    }
-    
-    .container {
-        max-width: 1218px;
-        margin: auto;
-    }
-    
-    header {
-        position: absolute;
-        top: 56px;
-        left: 0;
-        right: 0;
-    }
-    
-    .header-wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        nav ul {
-            list-style: none;
-            display: flex;
-            li a {
-                text-decoration: none;
-                margin-left: 40px;
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 23px;
-                color: #1F1534;
-                opacity: 0.5;
+            @import 'variables.scss';
+            * {
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
             }
-            li .active {
-                font-weight: 700;
-                line-height: 23px;
-                opacity: 100%;
+            
+            body {
+                background: #F7F9FC;
+                font-family: 'Mulish', sans-serif;
             }
-        }
-    }
-    
-    .logo-wrapper {
-        display: flex;
-        position: relative;
-        .logo {
-            font-weight: 700;
-            font-size: 26px;
-            line-height: 33px;
-            color: #FFFFFF;
-            margin-left: 13px;
-        }
-        .round {
-            position: absolute;
-            top: -5px;
-            left: 0px;
-            z-index: -1;
-        }
-        .title {
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 30px;
-            color: #233348;
-            margin-left: 23px;
-        }
-    }
-    
-    .healthcare .container {
-        padding-top: 177px;
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .healthcare {
-        .text {
-            width: 445px;
-        }
-        &__img {
-            display: block;
-            align-items: center;
-            width: 693px;
-            height: 598px;
-        }
-        &__title {
-            @extend %text-title;
-            font-size: 48px;
-            margin-top: 106px
-        }
-        &__description {
-            @extend %text-description;
-            margin: 35px 0;
-        }
-        &__button {
-            @extend %button;
-            @extend %button-text;
-            color: #FFFFFF;
-        }
-    }
+            
+            .container {
+                max-width: 1218px;
+                margin: auto;
+            }
+            
+            header {
+                position: absolute;
+                top: 56px;
+                left: 0;
+                right: 0;
+            }
+            
+            .header-wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                nav ul {
+                    list-style: none;
+                    display: flex;
+                    li a {
+                        text-decoration: none;
+                        margin-left: 40px;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 23px;
+                        color: #1F1534;
+                        opacity: 0.5;
+                    }
+                    li .active {
+                        font-weight: 700;
+                        line-height: 23px;
+                        opacity: 100%;
+                    }
+                }
+            }
+            
+            .logo-wrapper {
+                display: flex;
+                position: relative;
+                .logo {
+                    font-weight: 700;
+                    font-size: 26px;
+                    line-height: 33px;
+                    color: #FFFFFF;
+                    margin-left: 13px;
+                }
+                .round {
+                    position: absolute;
+                    top: -5px;
+                    left: 0px;
+                    z-index: -1;
+                }
+                .title {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 30px;
+                    color: #233348;
+                    margin-left: 23px;
+                }
+            }
+            
+            .healthcare .container {
+                padding-top: 177px;
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .healthcare {
+                .text {
+                    width: 445px;
+                }
+                &__img {
+                    display: block;
+                    align-items: center;
+                    width: 693px;
+                    height: 598px;
+                }
+                &__title {
+                    @extend %text-title;
+                    font-size: 48px;
+                    margin-top: 106px
+                }
+                &__description {
+                    @extend %text-description;
+                    margin: 35px 0;
+                }
+                &__button {
+                    @extend %button;
+                    background: #458FF6;
+                    @extend %button-text;
+                    line-height: 56px;
+                    color: #FFFFFF;
+                }
+            }
+            
+            .services .container {
+                margin-top: 192px;
+            }
+            
+            .services {
+                background: url(/images/background.svg);
+                background-repeat: no-repeat;
+                &__title {
+                    @extend %text-title;
+                    text-align: center;
+                }
+                &__title::after {
+                    content: '';
+                    display: block;
+                    background-image: url(/images/line-title.png);
+                    width: 56px;
+                    height: 2px;
+                    margin: 26px auto 33px;
+                    background-repeat: no-repeat;
+                }
+                &__description {
+                    @extend %text-description;
+                    font-size: 18px;
+                    line-height: 30px;
+                    margin: 0 135px 80px 133px;
+                    text-align: center;
+                }
+                &__cards-wrapper {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    margin-bottom: 35px;
+                    background: url(/images/bgelement.svg) right;
+                    background-repeat: no-repeat;
+                }
+                &__card:nth-child(2),
+                &__card:nth-child(5) {
+                    margin: 0 34px;
+                }
+                &__card {
+                    display: block;
+                    text-align: left;
+                    width: 350px;
+                    height: 354px;
+                    background-color: #FFFFFF;
+                    padding-left: 38px;
+                    border-radius: 20px;
+                    margin-bottom: 37px;
+                }
+                &__card-title {
+                    @extend %text-title;
+                    font-size: 24px;
+                }
+                &__card-text {
+                    @extend %text-description;
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+                .button {
+                    @extend %button;
+                    @extend %button-text;
+                    line-height: 52px;
+                    margin: auto;
+                }
+            }
+            
+            .provideres .container {
+                padding-top: 221px;
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .provideres {
+                &__img {
+                    display: block;
+                    width: 650;
+                    height: 477;
+                    margin-right: 87px;
+                }
+                &__text {
+                    margin-top: 57px;
+                    width: 486px;
+                }
+                &__title {
+                    @extend %text-title;
+                }
+                &__title::after {
+                    content: '';
+                    display: block;
+                    background-image: url(/images/line-title.png);
+                    width: 56px;
+                    height: 2px;
+                    margin: 26px 0 31px;
+                    background-repeat: no-repeat;
+                }
+                &__description {
+                    @extend %text-description;
+                    font-size: 18px;
+                    line-height: 30px;
+                    width: 450px;
+                }
+                .button {
+                    @extend %button;
+                    @extend %button-text;
+                    height: 58px;
+                    line-height: 56px;
+                    margin-top: 37px;
+                }
+            }
+            
+            .apps .container {
+                padding-top: 229px;
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .apps {
+                &__img {
+                    display: block;
+                    width: 665px;
+                    height: 434px;
+                }
+                &__text {
+                    margin: 36px 45px 0 90px;
+                    width: 420px;
+                }
+                &__title {
+                    @extend %text-title;
+                    line-height: 48px;
+                    width: 254px;
+                }
+                &__title::after {
+                    content: '';
+                    display: block;
+                    background-image: url(/images/line-title.png);
+                    width: 56px;
+                    height: 2px;
+                    margin: 30px 0 31px;
+                    background-repeat: no-repeat;
+                }
+                &__description {
+                    @extend %text-description;
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+                .button {
+                    @extend %button;
+                    height: 56px;
+                    @extend %button-text;
+                    margin-top: 40px;
+                }
+                .button::after {
+                    content: '\2913';
+                    margin-left: 15px;
+                }
+            }
+            
+            .feedback .container {
+                margin-top: 251px;
+            }
+            
+            .background {
+                background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+                border-radius: 24px;
+                width: 1120px;
+                margin: auto;
+                padding: 79px 0;
+                &__title {
+                    @extend %text-title;
+                    line-height: 48px;
+                    color: #FFFFFF;
+                    text-align: center;
+                }
+                &__title::after {
+                    content: '';
+                    display: block;
+                    background-image: url(/images/line-white.png);
+                    width: 56px;
+                    height: 2px;
+                    margin: 30px auto 31px;
+                    background-repeat: no-repeat;
+                }
+                &__customer {
+                    display: flex;
+                }
+            }
