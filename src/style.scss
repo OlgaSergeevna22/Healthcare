@@ -270,8 +270,9 @@
                 background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
                 border-radius: 24px;
                 width: 1120px;
+                height: 425px;
                 margin: auto;
-                padding: 79px 0;
+                padding: 65px 0;
                 &__title {
                     @extend %text-title;
                     line-height: 48px;
@@ -284,10 +285,37 @@
                     background-image: url(/images/line-white.png);
                     width: 56px;
                     height: 2px;
-                    margin: 30px auto 31px;
+                    margin: 25px auto 66px;
                     background-repeat: no-repeat;
                 }
-                &__customer {
+                &__wrapper {
                     display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                &__customer {
+                    margin: 0 111px 0 29px;
+                }
+            }
+            
+            .customer {
+                &__text {
+                    width: 420px;
+                    font-weight: 400;
+                    font-size: 19px;
+                    line-height: 30px;
+                    color: rgba(255, 255, 255, 0.9);
+                }
+                &__name {
+                    margin-top: 33px;
+                    font-size: 22px;
+                    line-height: 48px;
+                    color: #FFFFFF;
+                }
+                &__post {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 48px;
+                    color: rgba(255, 255, 255, 0.85);
                 }
             }
