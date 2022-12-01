@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.background__title, .apps__title, .provideres__title, .services__card-title, .services__title, .healthcare__title {
+.article__card__title, .article__title, .background__title, .apps__title, .provideres__title, .services__card-title, .services__title, .healthcare__title {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -7,7 +7,7 @@
   color: #000000;
 }
 
-.apps__description, .provideres__description, .services__card-text, .services__description, .healthcare__description {
+.article__card__description, .apps__description, .provideres__description, .services__card-text, .services__description, .healthcare__description {
   font-style: normal;
   font-weight: 300;
   font-size: 21px;
@@ -15,7 +15,7 @@
   color: #7D7987;
 }
 
-.apps .button, .provideres .button, .services .button, .healthcare__button {
+.article__card .button-all, .apps .button, .provideres .button, .services .button, .healthcare__button {
   display: block;
   width: 200px;
   height: 56px;
@@ -24,7 +24,7 @@
   border: 2px solid #458FF6;
 }
 
-.apps .button, .provideres .button, .services .button, .healthcare__button {
+.article__card .button-all, .apps .button, .provideres .button, .services .button, .healthcare__button {
   text-decoration: none;
   text-align: center;
   font-style: normal;
@@ -323,4 +323,59 @@ header {
   font-size: 18px;
   line-height: 48px;
   color: rgba(255, 255, 255, 0.85);
+}
+
+.article .container {
+  margin-top: 278px;
+}
+
+.article__title {
+  text-align: center;
+}
+.article__title::after {
+  content: "";
+  display: block;
+  background-image: url(/images/line-title.png);
+  width: 56px;
+  height: 2px;
+  margin: 32px auto 79px;
+  background-repeat: no-repeat;
+}
+.article__cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.article__card {
+  width: 350px;
+}
+.article__card__title {
+  margin: 24px 0 12px 33px;
+  font-size: 21px;
+  line-height: 32px;
+}
+.article__card__description {
+  margin-left: 33px;
+  font-size: 16px;
+  line-height: 28px;
+}
+.article__card .button {
+  display: block;
+  margin: 25px 0 35px 33px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  color: #4089ED;
+  text-decoration: none;
+}
+.article__card .button::after {
+  content: "⤑";
+  margin-left: 15px;
+}
+.article__card:nth-child(2) {
+  margin: 0 34px;
+}
+.article__card .button-all {
+  height: 60px;
+  margin: auto;
+  line-height: 60px;
 }/*# sourceMappingURL=style.css.map */
