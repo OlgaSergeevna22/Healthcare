@@ -1,20 +1,12 @@
 $color-title:#000000;
 $color-description: #7D7987;
+$color-footer:#FFF;
 $color-button:#458FF6;
-%text-title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 56px;
-    color: $color-title;
-}
-
-%text-description {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 21px;
-    line-height: 32px;
-    color: $color-description;
+@mixin text ($f-weight, $f-size, $l-height, $color) {
+    font-weight: $f-weight;
+    font-size: $f-size;
+    line-height: $l-height;
+    color: $color;
 }
 
 %button {

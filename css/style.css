@@ -1,20 +1,4 @@
 @charset "UTF-8";
-.article__card__title, .article__title, .background__title, .apps__title, .provideres__title, .services__card-title, .services__title, .healthcare__title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 56px;
-  color: #000000;
-}
-
-.article__card__description, .apps__description, .provideres__description, .services__card-text, .services__description, .healthcare__description {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 21px;
-  line-height: 32px;
-  color: #7D7987;
-}
-
 .article .button-all, .apps .button, .provideres .button, .services .button, .healthcare__button {
   display: block;
   width: 200px;
@@ -41,7 +25,6 @@
 }
 
 body {
-  background: #F7F9FC;
   font-family: "Mulish", sans-serif;
 }
 
@@ -77,7 +60,6 @@ header {
 }
 .header-wrapper nav ul li .active {
   font-weight: 700;
-  line-height: 23px;
   opacity: 100%;
 }
 
@@ -89,7 +71,7 @@ header {
   font-weight: 700;
   font-size: 26px;
   line-height: 33px;
-  color: #FFFFFF;
+  color: #FFF;
   margin-left: 13px;
 }
 .logo-wrapper .round {
@@ -122,10 +104,17 @@ header {
   height: 598px;
 }
 .healthcare__title {
+  font-weight: 700;
   font-size: 48px;
+  line-height: 56px;
+  color: #000000;
   margin-top: 106px;
 }
 .healthcare__description {
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 32px;
+  color: #7D7987;
   margin: 35px 0;
 }
 .healthcare__button {
@@ -134,15 +123,18 @@ header {
   color: #FFFFFF;
 }
 
-.services .container {
-  margin-top: 192px;
-}
-
 .services {
   background: url(/images/background.svg);
   background-repeat: no-repeat;
 }
+.services .container {
+  margin-top: 192px;
+}
 .services__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 56px;
+  color: #000000;
   text-align: center;
 }
 .services__title::after {
@@ -155,10 +147,12 @@ header {
   background-repeat: no-repeat;
 }
 .services__description {
+  font-weight: 300;
   font-size: 18px;
   line-height: 30px;
-  margin: 0 135px 80px 133px;
-  text-align: center;
+  color: #7D7987;
+  margin: 0 auto 80px;
+  width: 952px;
 }
 .services__cards-wrapper {
   display: flex;
@@ -169,24 +163,33 @@ header {
   background-repeat: no-repeat;
 }
 .services__card:nth-child(2), .services__card:nth-child(5) {
-  margin: 0 34px;
+  margin: 0 34px 37px;
 }
 .services__card {
   display: block;
   text-align: left;
   width: 350px;
-  height: 354px;
   background-color: #FFFFFF;
-  padding-left: 38px;
+  padding: 47px 45px 47px 38px;
   border-radius: 20px;
   margin-bottom: 37px;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+}
+.services__card__wrapper-img {
+  min-height: 95px;
 }
 .services__card-title {
+  font-weight: 700;
   font-size: 24px;
+  line-height: 56px;
+  color: #000000;
+  margin-top: 20px;
 }
 .services__card-text {
+  font-weight: 300;
   font-size: 16px;
   line-height: 28px;
+  color: #7D7987;
 }
 .services .button {
   line-height: 52px;
@@ -209,6 +212,12 @@ header {
   margin-top: 57px;
   width: 486px;
 }
+.provideres__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 56px;
+  color: #000000;
+}
 .provideres__title::after {
   content: "";
   display: block;
@@ -219,8 +228,10 @@ header {
   background-repeat: no-repeat;
 }
 .provideres__description {
+  font-weight: 300;
   font-size: 18px;
   line-height: 30px;
+  color: #7D7987;
   width: 450px;
 }
 .provideres .button {
@@ -245,7 +256,10 @@ header {
   width: 420px;
 }
 .apps__title {
+  font-weight: 700;
+  font-size: 36px;
   line-height: 48px;
+  color: #000000;
   width: 254px;
 }
 .apps__title::after {
@@ -258,8 +272,10 @@ header {
   background-repeat: no-repeat;
 }
 .apps__description {
+  font-weight: 300;
   font-size: 18px;
   line-height: 30px;
+  color: #7D7987;
 }
 .apps .button {
   height: 56px;
@@ -283,8 +299,10 @@ header {
   padding: 65px 0;
 }
 .background__title {
+  font-weight: 700;
+  font-size: 36px;
   line-height: 48px;
-  color: #FFFFFF;
+  color: #FFF;
   text-align: center;
 }
 .background__title::after {
@@ -306,17 +324,18 @@ header {
 }
 
 .customer__text {
-  width: 420px;
   font-weight: 400;
   font-size: 19px;
   line-height: 30px;
   color: rgba(255, 255, 255, 0.9);
+  width: 420px;
 }
 .customer__name {
-  margin-top: 25px;
+  font-weight: 700;
   font-size: 22px;
   line-height: 48px;
-  color: #FFFFFF;
+  color: #FFF;
+  margin-top: 25px;
 }
 .customer__post {
   font-weight: 400;
@@ -331,10 +350,14 @@ header {
 
 .article .button-all {
   height: 60px;
-  margin: auto;
+  margin: 69px auto 201px;
   line-height: 60px;
 }
 .article__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 56px;
+  color: #000000;
   text-align: center;
 }
 .article__title::after {
@@ -353,15 +376,22 @@ header {
 .article__card {
   width: 350px;
 }
+.article__card img {
+  display: block;
+}
 .article__card__title {
   margin: 24px 0 12px 33px;
+  font-weight: 700;
   font-size: 21px;
   line-height: 32px;
+  color: #000000;
 }
 .article__card__description {
   margin-left: 33px;
+  font-weight: 300;
   font-size: 16px;
   line-height: 28px;
+  color: #7D7987;
 }
 .article__card .button {
   display: block;
@@ -378,4 +408,75 @@ header {
 }
 .article__card:nth-child(2) {
   margin: 0 34px;
+}
+
+footer {
+  padding-top: 118px;
+  padding-bottom: 128px;
+  background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+footer .container .company__title,
+footer .container .region__title,
+footer .container .help__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 60px;
+  color: #FFF;
+}
+footer .container .company__description,
+footer .container .region__description,
+footer .container .help__description {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 38px;
+  color: #FFF;
+}
+footer .container .trafalgar {
+  width: 391px;
+  position: relative;
+}
+footer .container .trafalgar__title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 33px;
+  color: #5B9BF3;
+  margin-left: 13px;
+  z-index: 1;
+}
+footer .container .trafalgar__title-tr {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFF;
+  margin-left: 23px;
+  margin-bottom: 22px;
+}
+footer .container .trafalgar .trafalgar-round {
+  position: absolute;
+  top: -5px;
+  left: 0px;
+}
+footer .container .trafalgar__description {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFF;
+  margin-bottom: 31px;
+}
+footer .container .trafalgar__description {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFF;
+}
+footer .container .trafalgar__copy {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFF;
 }/*# sourceMappingURL=style.css.map */
